@@ -1,3 +1,10 @@
+![Graph showing speed of HalftimeHash40 AVX2 vs HalftimeHash40 AVX-512 vs BRWhash1305 AVX2](bytes-per-cycle.png?raw=true)
+
+This is a fork of the below work that adds in [HalftimeHash](https://github.com/jbapple/HalftimeHash), authored by Jim Apple.
+The paper is also available at https://arxiv.org/abs/2104.08865.
+As the above chart shows, HalftimeHash40 configured for AVX2 vectorization is roughly three to ten times faster than AVX2 vectorized BRW hash.
+It also has higher security - roughly 145 bits compared to 130 bits.
+
 ## Vectorised Hashing Based on Bernstein-Rabin-Winograd Polynomials over Prime Order Fields
 
 This is the source code repository of the work [Vectorised Hashing Based on Bernstein-Rabin-Winograd Polynomials over Prime Order Fields](https://eprint.iacr.org/2025/1262), authored by [Kaushik Nath](kaushik.nath@yahoo.in) & [Palash Sarkar](palash@isical.ac.in) of [Indian Statistical Institute, Kolkata, India](https://www.isical.ac.in). The paper is also available at https://arxiv.org/abs/2507.06490.
